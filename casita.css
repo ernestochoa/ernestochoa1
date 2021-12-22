@@ -1,0 +1,110 @@
+header, nav, main, footer { display: block; }
+* {box-sizing: border-box; }
+body { background-color: #F8B195;
+       font-family: Verdana, Arial, sans-serif;
+}
+#wrapper { width: 80%;
+           margin: auto;
+		   background-color: #F67280;
+		   color: #000000;
+		   box-shadow: 5px 5px 5px #000000;
+}
+h1 { background-image: url(images/gif);
+     background-repeat: no-repeat;
+     background-color: #355C7D;
+	 height: 110px;
+	 font-family: Georgia, "Times New Roman", serif;
+	 font-size: 4.5em;
+     padding-left: 220px;
+	 padding-top: 20px;
+	 text-shadow: 2px 2px 2px #f0f0f0;
+	 margin-bottom: 0;
+}
+nav { padding-top: 10px;
+      float: left;
+      width: 200px;
+}
+nav ul { list-style-type: none;
+       padding-left: 20px;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #330000; }
+nav a:visited{ color: #FFFFFF; }
+nav a:hover { color: #6C5B7B; }
+
+
+main { background-color: #C06C84;
+          margin-left: 200px;
+          padding: 1px 20px 20px 20px;
+		  min-height: 300px;
+		  color:#000000;
+}
+img { float: right;
+
+	  width:200px;
+}
+
+footer {margin-left: 200px;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-weight:bold;
+	   font-style: italic;
+	   border-top: 2px #221811 solid;
+	   background-color:#667292;
+}
+table
+{
+	width:80%;
+	margin:auto;
+	padding:1em;
+
+}
+td, th
+{
+	border: 1px solid;
+	padding: 1em;
+	font-family: Arial, sans-seriff;
+	margin:auto;
+}
+.altrow
+{
+	background-color: #FFFFFF;
+
+}
+.fotorama{padding-top:3em;}
+audio { display:block; margin-top:0px; float:center;}
+
+#mySubmit { margin-left: 9.5em;}
+
+#mobile{ display: none; }
+#desktop{ display: inline; }
+
+
+@media only screen and (max-width: 1024px){
+	main {margin-left: 0; display:block; padding:0;}
+	nav { float: none; width: auto;}
+	h1,h2 {display:block; padding:0;margin-left: 0; font-size: 100%;}
+	p { font-size: 90%; }
+
+	figure { display: none;}
+	nav, nav ul, nav li { padding: 0; }
+	nav li { display: block; }
+
+	nav a { display: block; padding: 0.5em 0;
+	border-bottom: 2px ridge #00005D;}
+
+    table {display:block; padding:0;margin-left: 0;}
+
+	td, th{display:block; padding:0;margin-left: 0;}
+
+	image{display:block; padding:0; margin-left:0; }
+
+	footer{display:block; padding:0;margin-left: 0;}
+
+	audio{display:auto;padding:0; margin-left:0;}
+
+}
